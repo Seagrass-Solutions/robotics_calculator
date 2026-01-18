@@ -25,7 +25,10 @@ export default function GripperCalc({ units }: { units: UnitSystem }) {
     return { W, F };
   }, [massOrLb, mu, sf, n, units]);
 
-  const warn = computed && Number.isFinite(computed.F) ? "Minimum required normal force. Add margin for vibration/acceleration and surface variability." : null;
+  const warn =
+    computed && Number.isFinite(computed.F)
+      ? "Minimum required normal force. Add margin for vibration/acceleration and surface variability."
+      : null;
 
   return (
     <div className="grid gap-3">

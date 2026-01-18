@@ -29,7 +29,7 @@ export default function TorqueCalc({ units }: { units: UnitSystem }) {
   return (
     <div className="grid gap-3">
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        <NumInput label={`Load (m)`} unit={u.mass} value={massOrLb} onChange={setMassOrLb} placeholder={units === "SI" ? "kg (e.g., 2.0)" : "lb (e.g., 5)"} />
+        <NumInput label="Load (m)" unit={u.mass} value={massOrLb} onChange={setMassOrLb} placeholder={units === "SI" ? "kg (e.g., 2.0)" : "lb (e.g., 5)"} />
         <NumInput label="Distance to CG (d)" unit={u.distance} value={distance} onChange={setDistance} placeholder={units === "SI" ? "m (e.g., 0.25)" : "in (e.g., 2.5)"} />
       </div>
 
